@@ -24,28 +24,29 @@ int main(){
 			case 1:
 				s=a+b;
 				printf("Tong cua 2 so la: %d",s);
-				break;
+				exit(0);
 			case 2:
 				s=a-b;
 				printf("Hieu cua 2 so la: %d",s);
-				break;
+				exit(0);
 			case 3:
 				s=a*b;
 				printf("Tich cua 2 so la: %d",s);
-				break;
+				exit(0);
 			case 4:
 				s=a/b;
 				printf("Thuong cua 2 so la: &d",s);
-				break;
+				exit(0);
 			case 5:
 				s=a%b;
 				printf("So du cua 2 so la %d");
-				break;
+				exit(0);
 			case 6:
     			while(a!=b){
     			if(a=b){
     				ucln=a;
     				printf("Uoc chung lon nhat: %d",ucln);
+    				exit(0);
 				}
         		if(a > b){
             		a=a-b;
@@ -59,7 +60,7 @@ int main(){
     				ucln=a;
     				bcnn=(c*d/ucln);
     				printf("Boi chung nho nhat la: %d",bcnn);
-    				break;
+    				exit(0);
 				}
         		if(a > b){
             		a = a - b;
