@@ -16,44 +16,41 @@ int main(){
 		scanf("%d",&choice);
 		switch(choice){
 			case 1:
-				j=1,i=n;
-				for(i=1;i>=1;i--){
+				j=1;
+				for(i=n;i>=1;i--){
 					if(i%2==0){
-						printf("%d\t\n",i);
-						s-=j;
-						break;
+						printf("%d\n",i);
 					}
-				}
+				}exit(0);
 			case 2:
 				for (i=1;i<n;i++){
-					printf("%d\t\n",i);
+					printf("%d\n",i);
 					s+=i;
 				} printf("Tong la: %d",s);
+				exit(0);
 			case 3:
 				for (i=1;i<n;i++){
 					if(n%i==0 && i%2==0){
-						printf("%d\t\n",i);
-						s+=i;
-						break;
-					}
+						printf("%d\n",i);
+					}exit(0);
 				}
 			case 4:
 				int quantum;
 				for (i=1;i<n;i++){
 					if(n%i==0 && i%2!=0){
-						printf("%d\t\n",i);
+						printf("%d\n",i);
 						s+=1;
 						quantum=quantum+1;
-						break;
+						exit(0);
 					}
 				}
 			case 5:
 				j=1;
 				for (i=n;i>=1;i--){
 					if(n%i==0 && i%2!=0){
-						printf("%d\t\n",i);
+						printf("%d\n",i);
 						s+=j;
-						break;
+						exit(0);
 					}
 				}
 			case 6:
