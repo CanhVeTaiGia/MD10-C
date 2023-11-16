@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-	int n,oldNums[n],addValue,addIndex,newNums;
+	int n,oldNums[n],addValue,addIndex,newNums,i;
 	printf("Nhap so phan tu cua mang = ");
 	scanf("%d",&n);
 	for(int i=0;i<n;i++){
@@ -10,12 +10,16 @@ int main(){
 	scanf("%d",&addValue);
 	printf("Nhap vi tri muon them ");
 	scanf("%d",&addIndex);
-	for(int i=0;i<=n;i++){
+	if(addIndex>n){
+		printf("Khong hop le");
+	} else{
+	for(i=0;i<=n;i++){
 		if(i<addIndex-1){
-			printf("newIndex[%d] = %d\n",i,oldNums[i]); 	
+			printf("newNums[%d] = %d\n",i,oldNums[i]); 	
 		}else if(i>addIndex-1){
-			printf("newIndex[%d] = %d\n",i,oldNums[i-1]);
+			printf("newNums[%d] = %d\n",i,oldNums[i-1]);
 		}else
-		printf("newIndex[%d] = %d\n",i,addValue);
+		printf("newNums[%d] = %d\n",i,addValue);
 	}
+ 	} 
 }

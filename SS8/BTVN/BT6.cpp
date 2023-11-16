@@ -9,13 +9,17 @@ int main(){
 	}
 	printf("Nhap vi tri muon xoa ");
 	scanf("%d",&delIndex);
-	for(i=0;i<=delIndex;i++){
-		newNums[i]=oldNums[i];
-	}
-	for(i=delIndex;i<n;i++){
-		newNums[i-1]=oldNums[i];
-	}
-	for(i=0;i<n-1;i++){
-		printf("newNums[%d] = %d\n",i,newNums[i]);
+	if(delIndex>n){
+		printf("Khong hop le");
+	} else{
+		for(i=0;i<=delIndex;i++){
+			newNums[i]=oldNums[i];
+		}
+		for(i=delIndex;i<n;i++){
+			newNums[i-1]=oldNums[i];
+		}
+		for(i=0;i<n-1;i++){
+			printf("newNums[%d] = %d\n",i,newNums[i]);
+		}
 	}
 }
