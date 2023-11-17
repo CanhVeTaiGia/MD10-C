@@ -24,14 +24,14 @@ int main(){
 				printf("%d",i);
 				sum+=i;
 			} printf("Tong la %d",sum);
-			exit(0);
+			break;
 		case 2:
 			for(int i=1;i<n;i++){
 				if(i%3==0){
 					printf("%d",i);
 					sum+=1;
 				} printf("%d",sum);
-			} exit(0);
+			} break;
 		case 3:
 			int isPrime;
     		if (n < 2){
@@ -43,7 +43,7 @@ int main(){
         		}
     		}
 			return 1;
-			exit(0);
+			break;
 		case 4:
 			int isPerfect;
 			for (int i=1;i<=n/2;i++){
@@ -52,7 +52,7 @@ int main(){
         		}
     		}printf("So nguyen la so hoan hao");
     		return (sum == n);
-    		exit(0);
+    		break;
     	case 5:
     		for(int i=1;i<=n;i){
     			if(n%i==0){
@@ -75,7 +75,7 @@ int main(){
         		}
     		}
     		return 1;
-			exit(0);
+			break;
 		case 8:
 			int j;
         	for(int i=2;i<=n;i++){
@@ -89,9 +89,9 @@ int main(){
 					}
         		}
    			}
-        	exit(0);
+        	break;
 		case 9:
-			exit(0);
+			break;
 		default:
 		printf("Vui long chon 1-9");			
 		}		
