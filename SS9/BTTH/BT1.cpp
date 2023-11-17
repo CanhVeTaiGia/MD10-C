@@ -6,17 +6,17 @@ int main(){
 		printf("\n1.Nhap so phan tu trong mang va gia tri cac phan tu\n");
 		printf("2.In ra gia tri cac phan tu dang quan li\n");
 		printf("3.In ra gia tri cac phan tu chan va tinh tong\n");
-		printf("4.In ra gia tri lon nhat v‡ nho nhat trong mang\n");
-		printf("5.In ra cac phan tu l‡ so nguyen to trong mang v‡ tinh tong\n");
-		printf("6.Nhap vao mot so v‡ thong ke trong mang co bao nhiÍu phan tu co gia tri nhu vay\n");
-		printf("7.Them mot phan tu v‡o vi tri chi dinh\n");
+		printf("4.In ra gia tri lon nhat v√† nho nhat trong mang\n");
+		printf("5.In ra cac phan tu l√† so nguyen to trong mang v√† tinh tong\n");
+		printf("6.Nhap vao mot so v√† thong ke trong mang co bao nhi√™u phan tu co gia tri nhu vay\n");
+		printf("7.Them mot phan tu v√†o vi tri chi dinh\n");
 		printf("8.Thoat\n");
 		int choice;
 		printf("Nhap lua chon ");
 		scanf("%d", &choice);
 		switch(choice){
 			case 1:
-			printf("Nhap n: ");
+			printf("Nhap so luong cac phan tu: ");
 			scanf("%d",&n);
 			for(i=0; i<n; i++){
 				printf("nums[%d]= ", currentIndex);
