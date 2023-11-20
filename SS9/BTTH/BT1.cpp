@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<math.h>
 int main(){
 	int n,nums[100],currentIndex=0,sum=0,max,min,i,count=0,check=0,findNum,j,addIndex,addValue,newNums[100];
 	do{
@@ -54,13 +55,16 @@ int main(){
 				break;
 			case 5:				
 				for(i=0;i<currentIndex;i++){
-					check=1;
-					for(j=2;j<nums[i]-1;i++){
-						if(nums[i]%2==0){
-							check=0;
+					check=0;
+					for(j=2;j<sqrt(nums[i]);j++){
+						if(nums[i]%j==0){
+							check=1;
+							break;
 						}
+					}else{
+						check=0;
 					}
-					if(check==1){
+					if(check==0){
 						if(nums[i]!=1){
 						printf("Gia tri cua mang la so nguyen to la:%d\n",nums[i]);						
 					}sum+=1;
