@@ -163,7 +163,7 @@ int main(){
                 }
                 printf("Day so sau khi sap xep lai la:\n");
                 for(int i=0;i<currentIndex;i++){
-		            printf("%d\t",num[i]);
+		            printf("num[%d]=%d\n",i,num[i]);
                 }
 				break;
 			case 9:
