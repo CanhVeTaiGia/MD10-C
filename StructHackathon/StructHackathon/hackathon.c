@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 //Khai bao cau truc sinh vien
 struct SinhVien
@@ -19,7 +20,7 @@ typedef struct SinhVien sv;
 void output(sv studentList[], int i)
 {
     printf("%d\t\t%s\t\t%s\t\t%s\t\t%d\n",
-           studentList[i].id, studentList[i].name, studentList[i].birthday, studentList[i].address, studentList[i].status);
+           studentList[i].status, studentList[i].name, studentList[i].birthday, studentList[i].address, studentList[i].status);
 }
 
 //Nhap vao
@@ -75,6 +76,7 @@ int main(){
 				printf("Nhap ten sinh vien muon thay doi thong tin: ");
             	count = 0;
             	char update_name[50];
+            	getchar();
             	gets(update_name);
             	for ( i = 0; i < lenStdList; i++)
             	{
